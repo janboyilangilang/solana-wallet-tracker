@@ -3,7 +3,7 @@ const solanaWeb3 = require("@solana/web3.js");
 const app = express();
 
 const QUICKNODE_RPC_URL =
-  "https://young-soft-hill.solana-mainnet.quiknode.pro/8010bf4c40d0abff347beac45fc6820cc20ad2da/";
+  "https://spring-weathered-forest.solana-mainnet.quiknode.pro/2cd1981a5dc319c4f19f90747802205084e5c34d";
 
 // connect to quick node rpc
 const connection = new solanaWeb3.Connection(QUICKNODE_RPC_URL);
@@ -117,3 +117,5 @@ const monitorTopHolders = async (topHolderList) => {
 };
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export default app;
